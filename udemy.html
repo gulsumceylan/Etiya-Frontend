@@ -1,0 +1,614 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <nav style="padding: 20;" class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <svg style="width: 90; height: 75;" viewBox="0 0 91 34" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.05 8.112L7.024 4.056 0 8.112V4.056L7.025 0l7.026 4.056v4.056h-.001z"
+                            fill="#A435F0" />
+                        <path
+                            d="M0 11.518h3.68v8.941c0 2.31 1.725 3.436 3.345 3.436 1.634 0 3.346-1.156 3.346-3.467v-8.91h3.68v9.154c0 2.128-.669 3.77-2.007 4.896-1.339 1.125-3.011 1.673-5.05 1.673-2.037 0-3.71-.547-5.017-1.673C.669 24.443 0 22.862 0 20.763v-9.245zM45.866 22.63c-1.114.992-2.383 1.478-3.83 1.478-2.64 0-4.41-1.504-4.61-3.833h11.89s.08-.752.08-1.458c0-2.19-.7-4.015-2.13-5.505-1.398-1.49-3.222-2.22-5.443-2.22-2.341 0-4.258.73-5.779 2.22-1.49 1.49-2.25 3.436-2.25 5.87v.12c0 2.403.76 4.319 2.25 5.749 1.49 1.429 3.467 2.159 5.87 2.159 2.794 0 5.017-1.102 6.685-3.002l-2.733-1.578zm-6.994-7.463c.82-.639 1.825-.973 2.95-.973 1.064 0 1.946.334 2.707 1.004.726.61 1.118 1.359 1.152 2.22H37.52c.118-.89.568-1.64 1.353-2.25zM82.91 29.276C81.417 32.801 79.855 34 77.46 34H75.8v-3.262h1.342c.824 0 1.59-.31 2.32-1.994l.73-1.686-6.296-15.54h3.741l4.471 11.192 4.593-11.192h3.74l-7.53 17.758zM28.377 5.649v7.257c-1.206-1.08-3.082-1.723-4.896-1.723-2.16 0-3.984.76-5.474 2.31-1.46 1.521-2.19 3.406-2.19 5.687 0 2.282.73 4.167 2.19 5.718 1.49 1.521 3.315 2.282 5.474 2.282 2.49 0 4.064-.979 4.896-1.746v1.411h3.65V5.65h-3.65zm-1.095 16.878c-.882.882-2.007 1.339-3.315 1.339-1.308 0-2.372-.457-3.254-1.339-.85-.882-1.277-2.007-1.277-3.345 0-1.339.426-2.464 1.277-3.346.882-.882 1.946-1.338 3.254-1.338s2.433.456 3.315 1.338c.912.882 1.37 2.007 1.37 3.346 0 1.338-.458 2.463-1.37 3.345zM68.222 11.214c-2.772 0-4.213 1.15-5.2 2.258-.395-.753-1.507-2.258-4.105-2.258-2.196 0-3.49 1.11-4.136 1.9V11.52h-3.618v15.327h3.618v-8.82c0-2.068 1.278-3.558 2.98-3.558 1.735 0 2.738 1.308 2.738 3.406v8.971h3.619v-8.82c0-2.098 1.246-3.558 3.04-3.558 1.734 0 2.737 1.308 2.737 3.405v8.972h3.65v-9.488c0-3.996-2.148-6.142-5.323-6.142z"
+                            fill="#000" />
+                    </svg>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categories
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Development</a></li>
+                                    <li><a class="dropdown-item" href="#">Business</a></li>
+                                    <li><a class="dropdown-item" href="#">Finance</a></li>
+                                </ul>
+                            </li>
+                            <form class="d-flex" style="width: 900">
+                                <button class="btn btn-outline-success" type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                </button>
+                                <input class="form-control me-2" type="search" placeholder="Search for anything"
+                                    aria-label="Search">
+                            </form>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Udemy Business</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Teach on Udemy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-cart3" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn btn-outline-success" type="submit">Login</button>
+                                <button class="btn btn-outline-success" type="submit">Sing up</button>
+                                <button style="width: 40; height: 40;" class="btn btn-outline-success" type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-globe" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="text-center">
+                <img src="resim1.jpg">
+                <div style="position: absolute; top: 250px; left: 300px;">
+                    <div class="card" style="width: 25rem; position: static">
+                        <div class="card-body">
+                            <h5 class="card-title">Sale ends today</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Last day to shop our Love to Learn Sale to Get
+                                courses starting at just ₺27.99.</h6>
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div style="padding-left: 300; padding-top: 80;">
+        <h2>A broad selection of courses</h2>
+        <h5>Choose from 155,000 online video courses with new additions published every month</h5>
+    </div>
+    <div style="padding-left:250; padding-top: 20;" class="row">
+        <div class="col">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: black;">Python</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#" style="color: black;">Excel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: black;">Web Development</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true" style="color: black;">Java
+                        Script</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#" style="color: black;">Data Science</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: black;">AWS Certification</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: black;">Drawing</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row" style="border:1px solid; margin-top: 10px;
+    margin-bottom: 10px; padding: 10;
+
+    margin-left: 100px;
+    margin-right: 150px;">
+
+        <h4 class="card-title" style="color: black;">Expand your career opportunities with Python</h4>
+        <br>Whether you work in machine learning or finance, or are pursuing a career in web development or data
+        science,</br>
+        Python is one of the most important skills you can learn. Python's simple syntax is especially suited for
+        desktop, web,</br>
+        and business applications. Python's design philosophy emphasizes readability and usability. Python was</p>
+        <button class="btn btn-dark" type="submit"
+            style="width: 150; height: 50; background-color: white; color: black;">Explore Pyton</button>
+        </br>
+        <div class="row" style="padding: 20;">
+            <div class="col">
+                <div class="card" style="width: 12rem;">
+                    <img src="1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">2021 Complete Python Bootcamp From Zero to Hero in Python</h5>
+                        <p class="card-text">Jose Portilla </p>
+                        <h5>₺27.99 <del>₺219.99</del> </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 12rem;">
+                    <img src="2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">2021 Complete Python Bootcamp From Zero to Hero in Python</h5>
+                        <p class="card-text">Jose Portilla </p>
+                        <h5>₺27.99 <del>₺219.99</del> </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 12rem;">
+                    <img src="3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">2021 Complete Python Bootcamp From Zero to Hero in Python</h5>
+                        <p class="card-text">Jose Portilla </p>
+                        <h5>₺27.99 <del>₺219.99</del> </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 12rem;">
+                    <img src="4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">2021 Complete Python Bootcamp From Zero to Hero in Python</h5>
+                        <p class="card-text">Jose Portilla </p>
+                        <h5>₺27.99 <del>₺219.99</del> </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 12rem;">
+                    <img src="5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">2021 Complete Python Bootcamp From Zero to Hero in Python</h5>
+                        <p class="card-text">Jose Portilla </p>
+                        <h5>₺27.99 <del>₺219.99</del> </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background-color: hsl(0, 6%, 80%); padding-left: 75;">
+        <div class="col" style="padding: 30;">
+            <div class="d-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-play-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path
+                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+                </svg>
+                <p style="padding-left: 10;">Learn in-demand skills with over 155,000 video courses</p>
+            </div>
+        </div>
+        <div class="col" style="padding: 30;">
+            <div class="d-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <p style="padding-left: 10;">Choose courses taught by real-world experts</p>
+            </div>
+        </div>
+        <div class="col" style="padding: 30;">
+            <div class="d-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-play-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path
+                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+                </svg>
+                <p style="padding-left: 10;"> Learn at your own pace, with lifetime access on mobile</p>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding: 70;">
+        <div class="col">
+            <div class="card" style="width: 15rem;">
+                <img src="6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The Complete 2021 Web Development Bootcamp</h5>
+                    <p class="card-text">Jose Portilla </p>
+                    <h5>₺27.99 <del>₺219.99</del> </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 15rem;">
+                <img src="7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">2021 Complete Python Bootcamp From Zero to Hero in Python</h5>
+                    <p class="card-text">Jose Portilla </p>
+                    <h5>₺27.99 <del>₺219.99</del> </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 15rem;">
+                <img src="8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">2021 Complete Python Bootcamp From Zero to Hero in Python</h5>
+                    <p class="card-text">Jose Portilla </p>
+                    <h5>₺27.99 <del>₺219.99</del> </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 15rem;">
+                <img src="9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">2021 Complete Python Bootcamp From Zero to Hero in Python</h5>
+                    <p class="card-text">Jose Portilla </p>
+                    <h5>₺27.99 <del>₺219.99</del> </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 15rem;">
+                <img src="10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">2021 Complete Python Bootcamp From Zero to Hero in Python</h5>
+                    <p class="card-text">Jose Portilla </p>
+                    <h5>₺27.99 <del>₺219.99</del> </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" style="padding: 70;">
+        <h1>Top categories</h1>
+        <div class="col">
+            <div class="card" style="width: 20rem;">
+                <img src="a.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Design</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 20rem;">
+                <img src="b.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Development</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 20rem;">
+                <img src="c.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Marketing</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 20rem;">
+                <img src="d.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">It and Software</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row" style="padding: 70;">
+        <div class="col">
+            <div class="card" style="width: 20rem;">
+                <img src="e.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Personal Development</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 20rem;">
+                <img src="f.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Business</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 20rem;">
+                <img src="g.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">MarkPhotographyeting</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 20rem;">
+                <img src="h.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Music</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row" style="background-color: hsl(0, 6%, 80%); padding: 75;">
+        <h4>Featured topics by category</h4>
+        <div class="col" style="padding: 30;">
+            <h6>Development</h6>
+            <a href="#">Python</a>
+            <p>30,181,196 students</p>
+            <a href="#">Python</a>
+            <p>30,181,196 students</p>
+            <a href="#">Python</a>
+            <p>30,181,196 students</p>
+            <button class="btn btn-dark" type="submit"
+                style="width: 150; height: 50; background-color:white; color: black; "> <b>Explore Phyton</b></button>
+        </div>
+        <div class="col" style="padding: 30;">
+            <h6>Development</h6>
+            <a href="#">Python</a>
+            <p>30,181,196 students</p>
+            <a href="#">Python</a>
+            <p>30,181,196 students</p>
+            <a href="#">Python</a>
+            <p>30,181,196 students</p>
+        </div>
+        <div class="col" style="padding: 30;">
+            <h6>Development</h6>
+            <a href="#">Python</a>
+            <p>30,181,196 students</p>
+            <a href="#">Python</a>
+            <p>30,181,196 students</p>
+            <a href="#">Python</a>
+            <p>30,181,196 students</p>
+        </div>
+        <div class="col" style="padding: 30;">
+            <h6>Development</h6>
+            <a href="#">Python</a>
+            <p>30,181,196 students</p>
+            <a href="#">Python</a>
+            <p>30,181,196 students</p>
+            <a href="#">Python</a>
+            <p>30,181,196 students</p>
+        </div>
+    </div>
+
+    <div class="row" style="padding: 100; padding-left: 200;">
+        <div class="card mb-3" style="max-width: 1000px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="x.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8" style="padding: 60;">
+                    <div class="card-body">
+                        <h5 class="card-title">Become an instructor </h5>
+                        <p class="card-text"> Instructors from around the world teach millions of students on Udemy. We
+                            provide the tools and skills to teach what you love.</p>
+                        <button class="btn btn-dark" type="submit"
+                            style="width: 230; height: 60; background-color:black; color:white; "> <b>Start Teaching
+                                Today</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="background-color: hsl(0, 25%, 98%); padding-left: 75;">
+        <div class="col" style="padding: 30;">
+            <div class="text-center">
+                <h3>Trusted by companies of all sizes</h3> <br>
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M36.3687 29.062C35.8454 30.2811 35.2035 31.4447 34.4524 32.5356C33.7438 33.6317 32.9158 34.644 31.9838 35.5536C31.1397 36.4078 30.0097 36.9116 28.8162 36.9658C27.8041 36.9182 26.8099 36.6786 25.8854 36.2597C24.8874 35.8236 23.8161 35.5839 22.7291 35.5536C21.6125 35.5796 20.5109 35.8192 19.4827 36.2597C18.5978 36.6612 17.6531 36.9113 16.6871 37C16.0773 36.9933 15.4752 36.8616 14.9172 36.613C14.3591 36.3644 13.8568 36.004 13.4407 35.5536C12.4686 34.6131 11.6028 33.5665 10.8593 32.4331C9.69697 30.7555 8.77834 28.9185 8.13135 26.9779C7.39833 24.8812 7.01733 22.6756 7.00411 20.4521C6.94726 18.2685 7.48121 16.1107 8.54843 14.211C9.32289 12.8384 10.4329 11.6895 11.7723 10.8741C13.1042 10.0755 14.62 9.64353 16.1686 9.62132C17.3318 9.6957 18.4746 9.96512 19.5503 10.4185C20.4063 10.8014 21.3083 11.0694 22.2331 11.2158C23.2573 11.0065 24.2581 10.6936 25.2203 10.2819C26.5079 9.75551 27.8902 9.50723 29.2784 9.55299C30.6031 9.58418 31.9027 9.92419 33.076 10.5465C34.2492 11.1688 35.2642 12.0565 36.0418 13.1405C34.8176 13.7958 33.7974 14.7816 33.0949 15.988C32.3923 17.1945 32.035 18.5743 32.0627 19.9737C32.0527 21.0452 32.2675 22.1067 32.6931 23.0882C33.1186 24.0697 33.7451 24.949 34.5313 25.6681C35.248 26.36 36.0849 26.9121 37 27.2967C36.7971 27.9687 36.5942 28.5267 36.3687 29.062ZM29.4926 1.72888C29.4671 3.59003 28.7742 5.37864 27.5424 6.76273C26.9091 7.63441 26.0779 8.33971 25.1187 8.81931C24.1595 9.29892 23.1003 9.53881 22.0302 9.51882C22.0183 9.29121 22.0183 9.06311 22.0302 8.8355C22.077 6.94692 22.7976 5.13902 24.0593 3.7447C24.7578 2.93885 25.6136 2.28747 26.573 1.83138C27.4712 1.3646 28.452 1.08204 29.4588 1C29.4588 1.25055 29.4588 1.48972 29.4588 1.72888H29.4926Z"
+                        fill="#6A6F73" />
+                </svg>
+                <svg width="67" height="44" viewBox="0 0 67 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M34.2525 15.8653C30.2066 15.8653 26.6858 18.1412 24.9127 21.4824C23.139 18.1412 19.62 15.8653 15.5713 15.8653C13.194 15.8653 10.9977 16.6518 9.2255 17.9799V9.07235C9.20454 7.92135 8.26587 7 7.11093 7C5.95598 7 5.02643 7.92135 5 9.07235V26.6129H5.00213C5.09539 32.3721 9.78869 37.0117 15.5713 37.0117C19.62 37.0117 23.139 34.7337 24.9127 31.3958C26.6858 34.7337 30.2066 37.0117 34.2525 37.0117C40.0898 37.0117 44.8251 32.2783 44.8251 26.4364C44.8251 20.5975 40.0898 15.8653 34.2525 15.8653ZM15.5713 32.7786C12.0685 32.7786 9.2255 29.941 9.2255 26.4379C9.2255 22.936 12.0685 20.0981 15.5713 20.0981C19.0738 20.0981 21.9108 22.936 21.9108 26.4364C21.9108 29.9401 19.0738 32.7786 15.5713 32.7786ZM34.2525 32.7786C30.7488 32.7786 27.9079 29.9401 27.9079 26.4364C27.9079 22.936 30.7488 20.0981 34.2525 20.0981C37.7547 20.0981 40.5941 22.936 40.5941 26.4364C40.5941 29.9401 37.7547 32.7786 34.2525 32.7786Z"
+                        fill="#6A6F73" />
+                    <path
+                        d="M61.2307 33.4718L55.4839 26.4227L61.2377 19.36C61.9652 18.4283 61.7565 17.1272 60.7522 16.4361C59.7468 15.739 58.336 15.9176 57.5581 16.8216V16.8204L52.6078 22.8874L47.662 16.8204V16.8216C46.8919 15.9176 45.4724 15.739 44.47 16.4361C43.4675 17.1278 43.2579 18.4283 43.9891 19.36H43.987L49.7307 26.4227L43.987 33.4718H43.9891C43.2579 34.4065 43.4675 35.7033 44.47 36.3974C45.4724 37.0916 46.8919 36.9148 47.662 36.0095L52.6078 29.951L57.5511 36.0095C58.3299 36.9148 59.7401 37.0916 60.7456 36.3974C61.7501 35.7033 61.9597 34.4065 61.2307 33.4718Z"
+                        fill="#6A6F73" />
+                </svg>
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M21.9213 4C25.4658 4 28.9307 5.05106 31.8777 7.02028C34.8249 8.98949 37.1219 11.7884 38.4783 15.0631C39.8347 18.3378 40.1897 21.9412 39.4981 25.4175C38.8066 28.8939 37.0999 32.0872 34.5935 34.5935C32.0872 37.0999 28.8939 38.8066 25.4175 39.4981C21.9412 40.1897 18.3378 39.8347 15.0631 38.4783C11.7884 37.1219 8.98949 34.8249 7.02028 31.8777C5.05106 28.9307 4 25.4658 4 21.9213C4.02072 17.1747 5.9155 12.6283 9.27191 9.27191C12.6283 5.9155 17.1747 4.02072 21.9213 4V4ZM21.9213 6.25C18.8313 6.25667 15.8126 7.17862 13.2463 8.89945C10.6799 10.6203 8.6808 13.0629 7.50142 15.9188C6.32203 18.7748 6.0152 21.9162 6.61965 24.9465C7.2241 27.9767 8.71275 30.7599 10.8977 32.9449C13.0826 35.1298 15.8658 36.6184 18.896 37.2228C21.9263 37.8273 25.0676 37.5205 27.9237 36.3411C30.7796 35.1617 33.2222 33.1627 34.943 30.5962C36.6639 28.0299 37.5859 25.0112 37.5925 21.9213C37.5836 17.7698 35.929 13.7913 32.9913 10.8578C30.0537 7.9244 26.0727 6.27547 21.9213 6.2725V6.25ZM11.4588 13.5062C12.507 12.2012 13.7888 11.1026 15.2387 10.2663L19.1875 21.145H24.745L28.6713 10.3113C30.0231 11.1059 31.226 12.1299 32.2263 13.3375L26.6013 28.0525L24.5087 22.7425H19.12L17.0612 28.0525L11.4588 13.5062ZM34.4875 17.1625C35.6317 20.2416 35.6142 23.6324 34.4379 26.6995C33.2616 29.7665 31.0073 32.2995 28.0975 33.8238L34.4875 17.1625ZM25.3075 34.915C23.0134 35.5033 20.6056 35.4839 18.3212 34.8588V34.5775L21.7863 25.5775L25.24 34.5775L25.3075 34.915ZM15.475 33.6775C13.3629 32.5249 11.5998 30.8253 10.3707 28.7569C9.14147 26.6884 8.49145 24.3274 8.48875 21.9213C8.47693 20.3879 8.7359 18.8645 9.25375 17.4213L15.475 33.6775ZM21.9213 8.48875C23.0791 8.48625 24.2324 8.63373 25.3525 8.9275L21.9775 18.31L18.6025 8.91625C19.6862 8.6341 20.8014 8.49046 21.9213 8.48875V8.48875Z"
+                        fill="#6A6F73" />
+                </svg>
+                <svg width="101" height="44" viewBox="0 0 101 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.1003 32.453C17.7765 32.6876 16.4294 32.7579 15.0359 32.9453L10.7856 20.3829V33.4844C9.46185 33.625 8.25417 33.8125 7 34V10H10.5303L15.361 23.6174V10H19.1003V32.453ZM26.4162 18.7891C27.8563 18.7891 30.0626 18.7187 31.3864 18.7187V22.4687C29.7373 22.4687 27.8098 22.4687 26.4162 22.539V28.1172C28.5994 27.9766 30.7826 27.789 32.9889 27.7186V31.3278L22.7001 32.1483V10H32.9889V13.75H26.4162V18.7891ZM46.8078 13.7501H42.9525V31.0001C41.6983 31.0001 40.4441 31.0001 39.2366 31.0468V13.7501H35.3813V10H46.808L46.8078 13.7501ZM52.8463 18.5313H57.9327V22.2812H52.8463V30.7892H49.1997V10H59.5816V13.75H52.8463V18.5313ZM65.6201 27.5078C67.7337 27.5545 69.8702 27.7189 71.9374 27.8359V31.5391C68.6162 31.328 65.295 31.1173 61.9042 31.0468V10H65.6201V27.5078ZM75.0727 31.7969C76.2572 31.8673 77.5114 31.9376 78.7191 32.078V10H75.0727V31.7969ZM95 10L90.2852 21.4141L95 34C93.6064 33.8125 92.2129 33.5547 90.8193 33.3203L88.1485 26.3829L85.4315 32.7579C84.0841 32.5234 82.7836 32.453 81.4367 32.2655L86.2211 21.2733L81.9011 10H85.8956L88.3343 16.3047L90.9356 10H95Z"
+                        fill="#6A6F73" />
+                </svg>
+                <svg width="115" height="44" viewBox="0 0 115 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                        <path
+                            d="M67.2652 10V17.4433C67.9683 16.9646 68.7589 16.6292 69.5918 16.4563C70.4246 16.2834 71.2834 16.2765 72.1189 16.4359C72.9545 16.5953 73.7504 16.9179 74.4611 17.3853C75.1718 17.8526 75.7834 18.4556 76.2608 19.1595L76.338 19.2656C77.0602 20.3948 77.3919 21.7298 77.2822 23.0657C77.1725 24.4016 76.6274 25.6645 75.7306 26.6607C74.7122 27.8355 73.2924 28.5884 71.7486 28.7722C70.9923 28.9024 70.2175 28.879 69.4704 28.7035C68.7234 28.5279 68.0193 28.2037 67.4002 27.7502C67.3134 28.0202 67.2556 28.2323 67.1784 28.483H64.2859V10.6846L67.2652 10ZM74.3325 22.592C74.355 21.8888 74.1685 21.1948 73.7967 20.5976C73.4248 20.0004 72.8843 19.5269 72.2433 19.2369C71.6024 18.9468 70.8899 18.8533 70.1958 18.9682C69.5018 19.083 68.8573 19.401 68.344 19.882C67.8306 20.3631 67.4714 20.9855 67.3117 21.6706C67.152 22.3557 67.199 23.0728 67.4468 23.7313C67.6946 24.3897 68.132 24.9599 68.7037 25.3697C69.2755 25.7796 69.9559 26.0108 70.6591 26.034H70.7362C71.666 26.0421 72.5622 25.6869 73.234 25.044C73.9057 24.401 74.2999 23.5212 74.3325 22.592V22.592Z"
+                            fill="#6A6F73" />
+                        <path
+                            d="M8.47088 24.52C8.72823 24.906 9.05936 25.2373 9.44524 25.4949C9.83111 25.7525 10.2641 25.9312 10.7193 26.0208C11.1745 26.1104 11.6429 26.1091 12.0977 26.017C12.5524 25.9249 12.9844 25.7438 13.3688 25.4841C13.5672 25.3525 13.7514 25.2007 13.9184 25.031C14.0348 24.8817 14.195 24.7725 14.3766 24.7189C14.5581 24.6653 14.7519 24.6699 14.9308 24.7321C15.6346 24.9249 16.3481 25.0888 17.2448 25.3106C16.8692 25.8916 16.4536 26.4457 16.001 26.9689C15.1804 27.8389 14.1268 28.4543 12.9659 28.7416C11.8049 29.0288 10.5859 28.9757 9.45432 28.5887C8.30151 28.2676 7.26922 27.6132 6.48703 26.7075C5.70485 25.8018 5.20761 24.6852 5.05774 23.498C4.85039 21.9243 5.24318 20.3303 6.15794 19.0332C7.0727 17.7361 8.44234 16.8311 9.99425 16.4981C10.8174 16.3041 11.6709 16.2752 12.5054 16.4129C13.3398 16.5506 14.1387 16.8523 14.8559 17.3005C15.5731 17.7488 16.1944 18.3347 16.6838 19.0244C17.1733 19.7141 17.5212 20.494 17.7076 21.3189C17.7029 21.3735 17.7029 21.4283 17.7076 21.4829C17.9004 22.3602 17.8715 22.447 16.9748 22.6206L9.02045 24.4043C8.83165 24.4082 8.64525 24.4475 8.47088 24.52V24.52ZM7.89238 22.1288L14.2559 20.6826C13.8867 20.0896 13.3421 19.6263 12.6977 19.3567C12.0533 19.0872 11.3409 19.0249 10.6595 19.1785C9.93748 19.2963 9.27462 19.6494 8.77414 20.183C8.27367 20.7166 7.96366 21.4007 7.89238 22.1288V22.1288Z"
+                            fill="#6A6F73" />
+                        <path
+                            d="M101.802 24.52C102.279 25.2574 103.016 25.7881 103.866 26.0061C104.717 26.2241 105.619 26.1135 106.391 25.6963C106.673 25.5688 106.926 25.3851 107.134 25.1563C107.519 24.5971 107.973 24.655 108.522 24.8189C109.072 24.9828 109.785 25.1178 110.45 25.2817C109.974 26.3462 109.197 27.2478 108.214 27.8753C106.785 28.8139 105.042 29.1472 103.368 28.8019C101.694 28.4566 100.226 27.461 99.2854 26.0337C98.8228 25.3679 98.4952 24.6177 98.3213 23.8258C98.1712 23.0064 98.1844 22.1654 98.3602 21.3512C98.5361 20.5369 98.871 19.7654 99.3458 19.0809C99.8206 18.3965 100.426 17.8126 101.127 17.3627C101.828 16.9129 102.611 16.606 103.431 16.4596H103.643C105.081 16.25 106.547 16.5272 107.808 17.247C109.07 17.9669 110.054 19.088 110.605 20.4319C110.758 20.9226 110.884 21.4215 110.981 21.9264C111.077 22.3217 110.894 22.4952 110.489 22.582C107.78 23.1798 105.07 23.7969 102.361 24.4139L101.802 24.52ZM107.587 20.6633C107.136 19.9617 106.446 19.4465 105.646 19.2127C104.845 18.9788 103.987 19.042 103.229 19.3906C102.004 19.9306 101.088 21.1936 101.301 22.0807L107.587 20.6633Z"
+                            fill="#6A6F73" />
+                        <path
+                            d="M32.8844 24.5203C33.1351 25.3977 34.7163 26.2365 36.0083 26.0919C36.9403 26.0129 37.8098 25.5902 38.4476 24.906C38.519 24.8305 38.6061 24.7716 38.7027 24.7333C38.7993 24.695 38.9031 24.6782 39.0068 24.6842C39.8263 24.8385 40.6362 25.0409 41.5522 25.2434C41.127 26.1806 40.4618 26.9888 39.6239 27.5863C38.9528 28.0992 38.1873 28.4748 37.3711 28.6918C36.5549 28.9087 35.7039 28.9628 34.8668 28.8509C34.0297 28.739 33.2228 28.4633 32.4922 28.0395C31.7617 27.6157 31.1217 27.0522 30.609 26.3811C29.9884 25.5729 29.5717 24.627 29.3941 23.6236C29.1292 22.0063 29.5073 20.3494 30.4478 19.0072C31.3883 17.665 32.8164 16.7438 34.427 16.4406C36.0822 16.0976 37.8059 16.4231 39.222 17.3461C40.6381 18.2691 41.6318 19.7147 41.9861 21.3675C42.1982 22.3316 42.1693 22.3316 41.263 22.5727L33.4243 24.3467L32.8844 24.5203ZM38.6694 20.6636C38.2497 20.0168 37.6272 19.5277 36.8996 19.2729C36.1719 19.0181 35.3802 19.0122 34.6488 19.256C33.5593 19.5741 32.2191 20.9047 32.3637 22.0906L38.6694 20.6636Z"
+                            fill="#6A6F73" />
+                        <path
+                            d="M46.2667 17.3759L47.4237 16.7492C48.5464 16.1384 49.8656 15.9985 51.0914 16.3601C52.3172 16.7217 53.3493 17.5552 53.9607 18.6775C54.3539 19.3992 54.5594 20.2082 54.5585 21.03V28.5409H51.8492C51.4154 28.5409 51.5214 28.2034 51.5214 27.9624V22.6595C51.518 22.146 51.4761 21.6336 51.3961 21.1264C51.1261 19.6995 50.1427 19.0631 48.5036 19.1981C47.9043 19.2108 47.3345 19.4604 46.9189 19.8923C46.5032 20.3242 46.2757 20.9032 46.286 21.5025C46.2813 21.5247 46.2813 21.5477 46.286 21.57V27.7888C46.286 28.3577 46.1607 28.6083 45.5436 28.5601C44.9266 28.5119 44.0299 28.5601 43.22 28.5601V17.2023C43.22 16.6431 43.4032 16.4985 43.9238 16.5274C44.4566 16.5659 44.9915 16.5659 45.5243 16.5274C46.0161 16.4792 46.3921 16.5852 46.2667 17.3759Z"
+                            fill="#6A6F73" />
+                        <path
+                            d="M17.052 16.5272H19.9445C20.147 16.5272 20.4169 16.8647 20.5037 17.1057C21.3907 19.3715 22.2585 21.6469 23.1262 23.9223C23.213 24.1537 23.3094 24.3755 23.4637 24.7322C23.6083 24.4333 23.7047 24.2405 23.7915 24.0477C24.6882 21.7433 25.5849 19.439 26.4526 17.1153C26.6261 16.6622 26.8286 16.4597 27.3396 16.4886H30.0682C29.6825 17.4528 29.3451 18.3109 28.998 19.169C27.7831 22.1193 26.5619 25.0697 25.3342 28.02C25.2932 28.1774 25.1961 28.3143 25.0611 28.4049C24.926 28.4955 24.7625 28.5335 24.6014 28.5117H22.3549C22.2348 28.4976 22.1195 28.4564 22.0177 28.3912C21.9158 28.3261 21.83 28.2388 21.7668 28.1357C20.2145 24.4623 18.6911 20.702 17.1677 17.0189C17.1172 16.8581 17.0786 16.6937 17.052 16.5272V16.5272Z"
+                            fill="#6A6F73" />
+                        <path
+                            d="M60.5747 11.5327V15.7847C60.5747 16.3921 60.7676 16.5946 61.3461 16.5367C61.7759 16.4982 62.2082 16.4982 62.638 16.5367C62.7923 16.5367 63.043 16.7199 63.043 16.8356V19.4003H60.6037V28.5213H57.6147C57.5183 28.5213 57.3641 28.1452 57.3641 27.9428V19.4292H55.9178C55.4357 19.4292 55.3779 19.3424 55.3875 18.9568V17.0188C55.3875 16.6717 55.5322 16.556 55.8696 16.556C56.2071 16.556 57.0266 16.6621 57.2098 16.421C57.3578 15.9476 57.407 15.4488 57.3544 14.9555V12.6994C57.3544 12.5162 57.5087 12.2173 57.6437 12.1787C58.5885 11.928 59.5527 11.7545 60.5747 11.5327Z"
+                            fill="#6A6F73" />
+                        <path
+                            d="M92.6802 12.2754H95.9198V16.0549C95.9198 16.4309 96.0451 16.5852 96.4115 16.5756C96.9253 16.5466 97.4403 16.5466 97.9542 16.5756C98.0477 16.5912 98.1357 16.6304 98.2099 16.6894C98.2841 16.7485 98.3421 16.8254 98.3784 16.913V19.4198H96.6911C96.1512 19.4198 95.8812 19.5452 95.8908 20.1912V28.483H92.738V20.114C92.738 19.6319 92.6031 19.4391 92.1113 19.4777C91.6196 19.5162 91.2629 19.4777 90.7519 19.4777V16.9034C90.7519 16.7877 90.9543 16.6623 91.0797 16.5756C91.205 16.4888 91.2339 16.5756 91.3207 16.5756C92.7091 16.5756 92.7091 16.5756 92.7091 15.1775L92.6802 12.2754Z"
+                            fill="#6A6F73" />
+                        <path
+                            d="M81.516 28.5894H78.7778C78.3054 28.5894 78.4211 28.2326 78.4114 27.9627V17.0869C78.4114 16.6627 78.5561 16.5084 78.9803 16.5181H81.4582C81.4735 16.803 81.509 17.0866 81.5643 17.3665L85.0449 16.4024V19.4877C84.6014 19.5552 84.1386 19.6034 83.6854 19.6998C83.3778 19.7217 83.0776 19.8044 82.8022 19.9431C82.5267 20.0817 82.2815 20.2736 82.0807 20.5076C81.8799 20.7416 81.7274 21.0131 81.6321 21.3064C81.5369 21.5997 81.5007 21.9089 81.5257 22.2163C81.5209 22.2482 81.5209 22.2807 81.5257 22.3127V27.7891L81.516 28.5894Z"
+                            fill="#6A6F73" />
+                        <path
+                            d="M89.3257 28.512H86.4332C86.4332 28.2517 86.4332 28.0396 86.4332 27.8275V17.2217C86.4332 16.6817 86.5778 16.4889 87.1178 16.5275C87.6577 16.566 88.3904 16.5275 89.0461 16.5275C89.345 16.5275 89.4896 16.6239 89.4896 16.9517V28.3288C89.4457 28.3987 89.3902 28.4606 89.3257 28.512Z"
+                            fill="#6A6F73" />
+                        <path
+                            d="M87.9173 10.2698C88.4125 10.2692 88.8889 10.459 89.2479 10.8001C89.6068 11.1411 89.8209 11.6072 89.8456 12.1017C89.8456 12.6131 89.6425 13.1036 89.2808 13.4652C88.9192 13.8269 88.4287 14.03 87.9173 14.03C87.3938 14.0404 86.8873 13.8436 86.5081 13.4825C86.1289 13.1214 85.9077 12.6251 85.8926 12.1017C85.9049 11.8484 85.9671 11.5999 86.0756 11.3707C86.1841 11.1414 86.3368 10.9358 86.5249 10.7657C86.7129 10.5955 86.9328 10.4641 87.1717 10.379C87.4106 10.2939 87.664 10.2568 87.9173 10.2698V10.2698Z"
+                            fill="#6A6F73" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="106" height="18.9265" fill="white" transform="translate(5 10)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="padding: 100; padding-left: 200;">
+        <div class="card mb-8" style="max-width: 1000px;">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="text-center"><svg style="width:300;" viewBox="0 0 470 80" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33.067 19.093L16.533 9.547 0 19.093V9.547L16.533 0l16.534 9.547v9.546z"
+                                    fill="#A435F0" />
+                                <path
+                                    d="M0 27.093h8.667v21.04c0 5.44 4.053 8.08 7.866 8.08 3.84 0 7.867-2.72 7.867-8.16v-20.96h8.667V48.64c0 5.013-1.574 8.88-4.72 11.52-3.147 2.64-7.094 3.947-11.867 3.947-4.8 0-8.72-1.28-11.813-3.947C1.6 57.52.027 53.787.027 48.853v-21.76H0zM107.946 53.253a12.993 12.993 0 01-9.013 3.467c-6.213 0-10.373-3.547-10.853-9.013h27.973s.187-1.76.187-3.44c0-5.147-1.654-9.44-5.014-12.96-3.28-3.494-7.573-5.227-12.8-5.227-5.52 0-10.026 1.707-13.6 5.227-3.493 3.493-5.306 8.08-5.306 13.813v.293c0 5.654 1.786 10.16 5.306 13.52 3.494 3.36 8.16 5.094 13.814 5.094 6.586 0 11.813-2.587 15.733-7.067l-6.427-3.707zM91.493 35.68c2-1.52 4.427-2.32 6.933-2.293a9.241 9.241 0 016.374 2.373c1.706 1.44 2.64 3.2 2.72 5.227h-19.2c.266-2.107 1.306-3.867 3.173-5.307zM195.12 68.88C191.6 77.173 187.92 80 182.294 80H178.4v-7.68h3.147c1.947 0 3.733-.72 5.467-4.693l1.706-3.974-14.826-36.56h8.8L193.2 53.44 204 27.093h8.8c.027 0-14.08 33.254-17.68 41.787zM66.773 13.28v17.067c-2.826-2.534-7.253-4.054-11.52-4.054-5.093 0-9.386 1.787-12.88 5.44-3.44 3.574-5.146 8.027-5.146 13.387 0 5.36 1.706 9.813 5.146 13.44 3.494 3.573 7.814 5.36 12.88 5.36 5.867 0 9.574-2.293 11.52-4.107v3.334h8.587V13.28h-8.587zm-2.56 39.733c-2.08 2.08-4.72 3.147-7.813 3.147a10.425 10.425 0 01-7.653-3.147c-2-2.08-3.014-4.72-3.014-7.866 0-3.147 1.014-5.787 3.014-7.867 2-2.08 4.773-3.2 7.653-3.147 3.067 0 5.733 1.067 7.813 3.147 2.16 2.08 3.227 4.72 3.227 7.867 0 3.146-1.093 5.786-3.227 7.866zM160.533 26.373c-6.533 0-9.92 2.72-12.24 5.307-.933-1.76-3.546-5.307-9.653-5.307-5.173 0-8.213 2.614-9.733 4.48v-3.76H120.4v36.054h8.507v-20.72c0-4.854 3.013-8.374 7.013-8.374 4.08 0 6.453 3.067 6.453 8.027V63.2h8.507V42.427c0-4.934 2.933-8.374 7.147-8.374 4.08 0 6.453 3.067 6.453 8.027V63.2h8.587V40.88c0-9.44-5.04-14.507-12.534-14.507z"
+                                    fill="#000" />
+                                <path
+                                    d="M245.6 26.267c-6.027 0-9.84 3.386-11.52 6.773V11.76h-4.72v51.413h4.693v-5.92c2.08 4.294 6.4 6.827 11.68 6.827 9.307 0 15.094-7.2 15.094-18.773 0-11.76-5.84-19.04-15.227-19.04zm-.693 33.706c-6.987 0-11.014-5.386-11.014-14.773 0-9.44 3.947-14.827 10.854-14.827 7.093 0 11.146 5.387 11.146 14.774.027 9.413-4 14.826-10.986 14.826zM277.547 64.08c-3.787 0-6.907-1.2-8.96-3.493-2.24-2.48-3.2-5.76-3.2-10.907V27.147h4.693v20.586c0 4.96.667 7.867 2.213 9.68 1.387 1.547 3.44 2.294 6.294 2.294 4.613 0 10.026-2.934 10.026-11.147V27.147h4.694V63.2h-4.694v-5.36c-1.466 3.093-5.066 6.24-11.066 6.24zM312.026 64.08c-7.626 0-12.773-4.053-14.853-7.52l-.053-.107 3.813-2.72.08.107c2.453 3.947 6.56 6.107 11.547 6.107 5.546-.08 8.746-2.427 8.746-6.48 0-3.92-3.226-5.014-7.413-6.054l-4.96-1.2c-6.293-1.493-10.187-3.653-10.187-9.76 0-6.106 5.067-10.213 12.614-10.213 6.773 0 10.88 3.227 13.12 5.92l.08.107-3.6 3.04-.08-.107a11.64 11.64 0 00-9.6-4.907c-4.854 0-7.76 2.107-7.76 5.654 0 3.76 2.48 5.013 7.04 6.026l4.746 1.12c5.6 1.254 10.774 3.36 10.774 10.054 0 6.666-5.387 10.853-14.054 10.933zM335.173 63.173h-4.693v-36.08h4.693v36.08zm0-43.786h-4.693V11.76h4.693v7.627zM370.347 63.173h-4.693V43.787c0-5.52-.347-8.88-2.214-10.88-1.36-1.52-3.493-2.294-6.293-2.294-3.014 0-5.44.96-7.2 2.88-1.894 1.947-2.987 4.96-2.987 8.267v21.413h-4.693v-36.08h4.693v5.44c1.44-3.013 5.12-6.266 11.227-6.266 3.813 0 6.907 1.2 8.96 3.493 2.24 2.56 3.2 4.933 3.2 13.013v20.4zM404.027 51.867l-.053.133c-1.414 2.96-4.827 7.893-11.921 7.893-5.786 0-11.973-3.626-11.973-13.786v-.4h27.227v-.72c0-11.547-6.053-18.72-15.787-18.72-9.6 0-16.293 7.653-16.293 18.64 0 12 6.24 19.173 16.666 19.173 8.934 0 13.467-5.307 15.681-9.787l.053-.106-3.6-2.32zM391.52 30.213c5.147 0 10.64 4.08 10.693 11.627h-22c.667-7.173 4.96-11.627 11.307-11.627zM424.827 64.08c-7.627 0-12.774-4.053-14.854-7.52l-.053-.107 3.813-2.72.08.107c2.454 3.947 6.56 6.107 11.547 6.107 5.547-.08 8.747-2.427 8.747-6.48 0-3.92-3.227-5.014-7.414-6.054l-4.96-1.2c-6.293-1.493-10.186-3.653-10.186-9.76 0-6.106 5.066-10.213 12.613-10.213 6.773 0 10.88 3.227 13.12 5.92l.08.107-3.6 3.04-.08-.107a11.638 11.638 0 00-9.6-4.907c-4.853 0-7.76 2.107-7.76 5.654 0 3.76 2.48 5.013 7.04 6.026l4.747 1.12c5.6 1.254 10.773 3.36 10.773 10.054-.027 6.666-5.413 10.853-14.053 10.933zM455.813 64.08c-7.626 0-12.773-4.053-14.853-7.52l-.053-.107 3.813-2.72.08.107c2.453 3.947 6.56 6.107 11.547 6.107 5.546-.08 8.746-2.427 8.746-6.48 0-3.92-3.226-5.014-7.413-6.054l-4.96-1.2c-6.293-1.493-10.187-3.653-10.187-9.76 0-6.106 5.067-10.213 12.614-10.213 6.773 0 10.88 3.227 13.12 5.92l.08.107-3.6 3.04-.08-.107a11.64 11.64 0 00-9.6-4.907c-4.854 0-7.76 2.107-7.76 5.654 0 3.76 2.48 5.013 7.04 6.026l4.746 1.12c5.6 1.254 10.774 3.36 10.774 10.054 0 6.666-5.387 10.853-14.054 10.933z"
+                                    fill="#A435F0" />
+                            </svg> </h5>
+                        <p class="text-center"> Get unlimited access to 6,000+ of Udemy’s top courses for your team.
+                            Learn and improve skills across business, tech, design, and more.</p>
+                        <button class="btn btn-dark" type="submit"
+                            style="width: 230; height: 60; background-color:black; color:white; "> <b>Start Teaching
+                                Today</b></button>
+                    </div>
+
+                </div>
+                <div class="col-md-4" style="padding: 60;">
+                    <img src="y.jpg" class="img-fluid rounded-start" alt="... ">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="padding: 50; padding-left: 200;">
+        <div class="card mb-3" style="max-width: 1000px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="z.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8" style="padding:20;">
+                    <div class="card-body">
+                        <h5 class="card-title">Transform your life through education</h5>
+                        <p class="card-text"> Learners around the world are launching new careers, advancing in their
+                            fields, and enriching their lives.</p>
+                        <button class="btn btn-dark" type="submit"
+                            style="width: 230; height: 60; background-color:black; color:white; "> <b>Start Teaching
+                                Today</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row bg-dark  ">
+        <footer class="pt-5">
+            <div class="row mx-4">
+                <div class="col-2">
+
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Udemy Businness</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Teach on Udemy</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Get the app</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-2">
+
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Careers</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Help and Support</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Affiliate</a></li>
+
+                </div>
+
+                <div class="col-2">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sitemap</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="container-fluid ">
+                    <a class="navbar-brand" href="#">
+                        <svg style="width: 100;" viewBox="0 0 213 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M33.059 19.088L16.528 9.544 0 19.088V9.544L16.53 0l16.531 9.544v9.544h-.002z"
+                                fill="#A435F0" />
+                            <path
+                                d="M0 27.101h8.659V48.14c0 5.437 4.058 8.085 7.872 8.085 3.842 0 7.872-2.72 7.872-8.157V27.1h8.658V48.64c0 5.008-1.573 8.872-4.722 11.52-3.15 2.648-7.086 3.936-11.88 3.936-4.795 0-8.731-1.288-11.808-3.936C1.573 57.512 0 53.792 0 48.853V27.101zM107.92 53.248c-2.621 2.333-5.608 3.477-9.013 3.477-6.208 0-10.376-3.538-10.846-9.018h27.979s.184-1.771.184-3.432c0-5.152-1.645-9.446-5.008-12.952-3.291-3.507-7.584-5.224-12.808-5.224-5.51 0-10.019 1.717-13.597 5.224-3.507 3.506-5.296 8.085-5.296 13.81v.286c0 5.653 1.789 10.16 5.296 13.525 3.506 3.363 8.157 5.08 13.81 5.08 6.574 0 11.806-2.592 15.731-7.064l-6.432-3.712zm-16.456-17.56c1.93-1.504 4.293-2.29 6.941-2.29 2.504 0 4.579.786 6.368 2.362 1.71 1.435 2.632 3.197 2.712 5.224H88.28c.277-2.093 1.336-3.859 3.184-5.296zM195.085 68.885C191.568 77.18 187.893 80 182.259 80h-3.904v-7.675h3.157c1.939 0 3.741-.728 5.459-4.693l1.717-3.965L173.875 27.1h8.802l10.52 26.334L204.003 27.1h8.802c-.002 0-14.101 33.248-17.72 41.784zM66.77 13.29v17.078c-2.837-2.544-7.25-4.056-11.52-4.056-5.08 0-9.373 1.79-12.88 5.437-3.434 3.579-5.151 8.014-5.151 13.382s1.717 9.802 5.152 13.453c3.506 3.579 7.8 5.368 12.88 5.368 5.861 0 9.562-2.301 11.52-4.107v3.32h8.586V13.291h-8.586zm-2.575 39.715c-2.075 2.075-4.723 3.15-7.8 3.15-3.078 0-5.582-1.075-7.656-3.15-2.003-2.074-3.006-4.722-3.006-7.872 0-3.149 1.003-5.797 3.006-7.872 2.074-2.074 4.578-3.149 7.656-3.149 3.077 0 5.725 1.075 7.8 3.15 2.146 2.074 3.221 4.722 3.221 7.871 0 3.15-1.075 5.798-3.221 7.872zM160.525 26.387c-6.522 0-9.914 2.706-12.237 5.312-.928-1.771-3.544-5.312-9.659-5.312-5.165 0-8.213 2.61-9.73 4.472v-3.755h-8.515v36.064h8.515V42.416c0-4.867 3.005-8.373 7.013-8.373 4.08 0 6.44 3.077 6.44 8.013v21.11h8.515V42.412c0-4.938 2.933-8.373 7.154-8.373 4.08 0 6.44 3.077 6.44 8.013v21.11h8.587V40.837c0-9.402-5.053-14.45-12.523-14.45z"
+                                fill="#fff" />
+                        </svg>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

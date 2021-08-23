@@ -1,6 +1,6 @@
 export default class Game{
-    constructor(id,name,unitPrice,minAge){
-        if (!id || !name || !unitPrice || !minAge ) {
+    constructor(id,name,unitPrice,minAge,type){
+        if (!id || !name || !unitPrice || !minAge || !type) {
            console.log("Geçersiz Oyun") 
         }
 
@@ -8,5 +8,6 @@ export default class Game{
         this.name=name;
         this.unitPrice=unitPrice;
         this.minAge=minAge;
+        this.type=type
     }
 }

@@ -24,7 +24,6 @@ export default class GameService2 {
                         this.errors.push(new DataError("Geçersiz veri: ", game))
                         break;
                 }
-
             }
         }
         console.log(this.fpsGames);
@@ -40,7 +39,6 @@ export default class GameService2 {
             if (!game[field]) {
                 this.errors.push(new DataError("Geçersiz Oyun: " + game.name))
                 hasErrors = true;
-
             }
         }
         return hasErrors;
